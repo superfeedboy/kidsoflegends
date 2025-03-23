@@ -1,0 +1,17 @@
+{
+  "name": "kids-of-legends",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:front": "yarn workspace front dev",
+    "dev:api": "yarn workspace api dev",
+    "build:front": "yarn workspace front build",
+    "build:api": "yarn workspace api build",
+    "start:front": "yarn workspace front start",
+    "start:api": "yarn workspace api start"
+  },
+  "devDependencies": {}
+}
