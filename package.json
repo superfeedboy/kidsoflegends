@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:front": "yarn workspace front dev",
+    "dev:front": "yarn workspace front dev --host",
     "dev:api": "yarn workspace api dev",
     "build:front": "yarn workspace front build",
     "build:api": "yarn workspace api build",

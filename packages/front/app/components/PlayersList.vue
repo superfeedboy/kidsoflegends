@@ -1,13 +1,14 @@
 <template>
-  <div class="flex flex-col gap-4 mt-6">
+  <div id="players-list" class="bg-darkblue-500 flex flex-col gap-4 pt-6 pb-20">
     <h1 class="text-3xl text-center">Casting</h1>
     <div
-      class="w-full flex flex-col lg:flex-row flex-nowrap justify-center px-10 lg:px-0 mb-6"
+      class="flex flex-col lg:flex-row flex-nowrap justify-center px-10 lg:px-0 mb-6"
     >
+      <!-- :style="`background-image: url('/players/${player.id}.png'); hover::background-image: url('/players/arcane-${player.id}.png'); background-size: cover;`" -->
       <USection
         v-for="player in players"
         :key="player"
-        class="h-60 lg:h-[50vh] lg:size-[15vw] hover:grow-7 transition-grow duration-300 bg-[center_top_30%] lg:bg-center shadow-[15px_0_15px_-15px,-15px_0_15px_-15px] lg:shadow-[0_15px_15px_-15px,0_-15px_15px_-15px] shadow-black hover:shadow-yellow-200"
+        class="w-full h-60 lg:h-[50vh] lg:size-[15vw] hover:grow-7 transition-grow duration-300 bg-[center_top_30%] lg:bg-center hover:bg-[center_top_30%] shadow-[15px_0_15px_-15px,-15px_0_15px_-15px] lg:shadow-[0_15px_15px_-15px,0_-15px_15px_-15px] shadow-black hover:shadow-yellow-200"
         :class="[
           player.id === 1
             ? 'rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl'
@@ -16,7 +17,13 @@
             ? 'rounded-b-xl lg:rounded-bl-none lg:rounded-r-xl'
             : '',
         ]"
-        :style="`background-image: url('/players/${player.id}.png'); background-size: cover;`"
+        :style="{
+          backgroundImage:
+            hoveredPlayer === player.id
+              ? `url('/players/arcane-${player.id}.jpg')`
+              : `url('/players/${player.id}.png')`,
+          backgroundSize: 'cover',
+        }"
         @mouseover="hoverPlayer(player.id)"
         @mouseleave="hoverPlayer(null)"
       >
@@ -83,7 +90,7 @@ const players = ref([
   },
   {
     id: 5,
-    name: "Bora KIM",
+    name: 'Bora "YellowStar" KIM',
     role: "Joueur",
     description:
       "Multiple Champion d'Europe de League of Legends, Légendaire support de la team Fnatic, Bora est plus connu sous le nom de YellowStar!",
@@ -95,3 +102,12 @@ const hoverPlayer = (playerId) => {
   console.log("Hovering:", hoveredPlayer.value);
 };
 </script>
+
+<style scoped>
+#players-list {
+  background-image: url("/wallpaper_bottom.png");
+  background-size: contain;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+</style>

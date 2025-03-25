@@ -12,8 +12,13 @@ type HydrationStrategies = {
 }
 type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }>)
 interface _GlobalComponents {
-      'Header': typeof import("../app/components/Header.vue")['default']
+      'ExplanationTile': typeof import("../app/components/ExplanationTile.vue")['default']
+    'Footer': typeof import("../app/components/Footer.vue")['default']
+    'Header': typeof import("../app/components/Header.vue")['default']
     'PlayersList': typeof import("../app/components/PlayersList.vue")['default']
+    'PodcastsLinks': typeof import("../app/components/PodcastsLinks.vue")['default']
+    'StreamPanel': typeof import("../app/components/StreamPanel.vue")['default']
+    'StreamProgram': typeof import("../app/components/StreamProgram.vue")['default']
     'UAccordion': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']
     'UAlert': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Alert.vue")['default']
     'UApp': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/App.vue")['default']
@@ -105,8 +110,13 @@ interface _GlobalComponents {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-      'LazyHeader': LazyComponent<typeof import("../app/components/Header.vue")['default']>
+      'LazyExplanationTile': LazyComponent<typeof import("../app/components/ExplanationTile.vue")['default']>
+    'LazyFooter': LazyComponent<typeof import("../app/components/Footer.vue")['default']>
+    'LazyHeader': LazyComponent<typeof import("../app/components/Header.vue")['default']>
     'LazyPlayersList': LazyComponent<typeof import("../app/components/PlayersList.vue")['default']>
+    'LazyPodcastsLinks': LazyComponent<typeof import("../app/components/PodcastsLinks.vue")['default']>
+    'LazyStreamPanel': LazyComponent<typeof import("../app/components/StreamPanel.vue")['default']>
+    'LazyStreamProgram': LazyComponent<typeof import("../app/components/StreamProgram.vue")['default']>
     'LazyUAccordion': LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']>
     'LazyUAlert': LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Alert.vue")['default']>
     'LazyUApp': LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/App.vue")['default']>
@@ -204,8 +214,13 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
+export const ExplanationTile: typeof import("../app/components/ExplanationTile.vue")['default']
+export const Footer: typeof import("../app/components/Footer.vue")['default']
 export const Header: typeof import("../app/components/Header.vue")['default']
 export const PlayersList: typeof import("../app/components/PlayersList.vue")['default']
+export const PodcastsLinks: typeof import("../app/components/PodcastsLinks.vue")['default']
+export const StreamPanel: typeof import("../app/components/StreamPanel.vue")['default']
+export const StreamProgram: typeof import("../app/components/StreamProgram.vue")['default']
 export const UAccordion: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']
 export const UAlert: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Alert.vue")['default']
 export const UApp: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/App.vue")['default']
@@ -297,8 +312,13 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
+export const LazyExplanationTile: LazyComponent<typeof import("../app/components/ExplanationTile.vue")['default']>
+export const LazyFooter: LazyComponent<typeof import("../app/components/Footer.vue")['default']>
 export const LazyHeader: LazyComponent<typeof import("../app/components/Header.vue")['default']>
 export const LazyPlayersList: LazyComponent<typeof import("../app/components/PlayersList.vue")['default']>
+export const LazyPodcastsLinks: LazyComponent<typeof import("../app/components/PodcastsLinks.vue")['default']>
+export const LazyStreamPanel: LazyComponent<typeof import("../app/components/StreamPanel.vue")['default']>
+export const LazyStreamProgram: LazyComponent<typeof import("../app/components/StreamProgram.vue")['default']>
 export const LazyUAccordion: LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']>
 export const LazyUAlert: LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Alert.vue")['default']>
 export const LazyUApp: LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/App.vue")['default']>

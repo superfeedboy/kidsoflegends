@@ -15,4 +15,20 @@
   --color-green-800: #016538;
   --color-green-900: #0a5331;
   --color-green-950: #052e16;
+
+  --color-darkblue-500: #02040f;
 }
+
+:root {
+  /* --ui-bg: #02040f; */
+  --ui-bg: white;
+  --ui-text: white;
+}
+
+/* body {
+  background-image: url("/wallpaper_bottom.png");
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} */

@@ -1291,7 +1291,7 @@ const _djqBwyVaDdVU24o975YkYr_J7WVgnjaLpFfnVkKrzs = (function(nitro) {
 
 const rootDir = "/Users/gilles/Documents/KidsOfLegends/packages/front";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"}],"style":[],"script":[],"noscript":[],"title":"Kids of Legends","description":"L'actual play dans l'univers de la série Arcane!","htmlAttrs":{"lang":"fr"}};
 
 const appRootTag = "div";
 
