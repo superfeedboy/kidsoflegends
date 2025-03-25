@@ -10,11 +10,13 @@
           incroyable d'Arcane, la série netflix de Riot Games.
         </p>
         <p>
-          Par le créateur du podcast DnD 4 Noobs <i>(Gilles COGNIN)</i> et celui
-          d'Amour, Gloire & Dragons <i>(Pierre Huntzinger)</i>,
-          <strong>Kids of Legends</strong> est également un actual play de jeu
-          de rôle. Mais là où DnD 4 Noobs et AG&D sont basés sur les règles de
-          Donjons et Dragons, <strong>KoL</strong> (pour les intimes) se base
+          Par le créateur du podcast DnD 4 Noobs (<i class="text-gray-400"
+            >Gilles COGNIN</i
+          >) et celui d'Amour, Gloire & Dragons (<i class="text-gray-400"
+            >Pierre Huntzinger</i
+          >), <strong>Kids of Legends</strong> est également un actual play de
+          jeu de rôle. Mais là où DnD 4 Noobs et AG&D sont basés sur les règles
+          de Donjons et Dragons, <strong>KoL</strong> (pour les intimes) se base
           sur un autre système de jeu: Kids on Bikes.
         </p>
         <p>

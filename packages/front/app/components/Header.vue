@@ -12,7 +12,7 @@
 <style scoped>
 #header {
   background-image: url("/wallpaper_top.png");
-  background-size: cover;
+  background-size: contain;
   background-position: top right;
   background-repeat: no-repeat;
 }

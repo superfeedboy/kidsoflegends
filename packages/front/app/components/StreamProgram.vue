@@ -75,7 +75,7 @@ onMounted(() => {
       let scaler = 0.5;
       if (window.innerWidth < 1025) {
         offsetChanger = 2200;
-        scaler = 0.4;
+        scaler = 0.3;
       }
       streamProgram.style.backgroundPositionY = `${
         (offset - offsetChanger) * scaler
