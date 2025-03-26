@@ -42,13 +42,12 @@ const items = ref([
   {
     title: "Montage",
     description:
-      "Le moment où on se rend compte qu'on a oublié de couper le micro",
+      "Le moment où on se rend compte qu'on a oublié de couper le micro xD",
     icon: "i-lucide-edit",
   },
   {
     title: "Publication",
-    description:
-      "Le moment où on se rend compte qu'on a oublié de couper le micro",
+    description: "Tout le monde peut écouter le podcast, même ta grand-mère!",
     icon: "i-lucide-upload",
   },
 ]);

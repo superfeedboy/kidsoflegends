@@ -1,5 +1,5 @@
 .env
 .DS_Store
 .data
-yarn.lock
+.output
 node_modules/
