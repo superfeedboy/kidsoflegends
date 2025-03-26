@@ -5,10 +5,11 @@
       class="flex flex-col lg:flex-row flex-nowrap justify-center px-10 lg:px-0 mb-6"
     >
       <!-- :style="`background-image: url('/players/${player.id}.png'); hover::background-image: url('/players/arcane-${player.id}.png'); background-size: cover;`" -->
-      <USection
+      <div
         v-for="player in players"
+        :id="player.id"
         :key="player"
-        class="w-full h-60 lg:h-[50vh] lg:size-[15vw] hover:grow-7 transition-grow duration-300 bg-[center_top_30%] lg:bg-center hover:bg-[center_top_30%] shadow-[15px_0_15px_-15px,-15px_0_15px_-15px] lg:shadow-[0_15px_15px_-15px,0_-15px_15px_-15px] shadow-black hover:shadow-yellow-200 cursor-pointer"
+        class="kol_player w-full h-60 lg:h-[50vh] lg:size-[15vw] hover:grow-7 transition-grow duration-300 bg-[center_top_30%] lg:bg-center hover:bg-[center_top_30%] shadow-[15px_0_15px_-15px,-15px_0_15px_-15px] lg:shadow-[0_15px_15px_-15px,0_-15px_15px_-15px] shadow-black hover:shadow-yellow-200 cursor-pointer"
         :class="[
           player.id === 1
             ? 'rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl'
@@ -16,6 +17,7 @@
           player.id === players.length
             ? 'rounded-b-xl lg:rounded-bl-none lg:rounded-r-xl'
             : '',
+          hoveredPlayer === player.id ? 'shadow-yellow-200' : '',
         ]"
         :style="{
           backgroundImage:
@@ -51,7 +53,7 @@
             {{ player.name }}
           </h1>
         </div>
-      </USection>
+      </div>
     </div>
   </div>
 </template>
@@ -102,8 +104,22 @@ const baseURL = config.app.baseURL || "";
 
 const hoverPlayer = (playerId) => {
   hoveredPlayer.value = playerId;
-  console.log("Hovering:", hoveredPlayer.value);
 };
+
+onMounted(() => {
+  const handleHovering = () => {
+    hoverPlayer(
+      parseInt(
+        document
+          .elementFromPoint(window.innerWidth / 2, window.innerHeight / 5)
+          .closest(".kol_player")?.id || null
+      )
+    );
+  };
+  if (window.innerWidth < 650) {
+    window.addEventListener("scroll", handleHovering);
+  }
+});
 </script>
 
 <style scoped>

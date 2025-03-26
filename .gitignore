@@ -2,5 +2,6 @@
 .DS_Store
 .data
 .output
+packages/front/.nuxt
 packages/front/dist
 node_modules/
