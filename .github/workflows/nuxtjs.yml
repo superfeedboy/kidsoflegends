@@ -69,13 +69,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuxt-build-
       - name: Install dependencies
+        working-directory: packages/front
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Static HTML export with Nuxt
+        working-directory: packages/front
         run: ${{ steps.detect-package-manager.outputs.manager }} run generate:front
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: packages/front/dist
 
   # Deployment job
   deploy:

@@ -27,6 +27,8 @@ export default defineNuxtConfig({
 
   compatibilityDate: "2024-11-27",
 
+  target: "static",
+
   app: {
     head: {
       title: "Kids of Legends",
@@ -36,5 +38,6 @@ export default defineNuxtConfig({
       },
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
+    baseURL: "/kidsoflegends/", // Chemin de base pour GitHub Pages
   },
 });
