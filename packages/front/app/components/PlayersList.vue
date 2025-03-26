@@ -116,6 +116,8 @@ onMounted(() => {
       )
     );
   };
+  console.log("Inner width", window.innerWidth);
+
   if (window.innerWidth < 650) {
     window.addEventListener("scroll", handleHovering);
   }
