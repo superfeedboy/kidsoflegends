@@ -57,7 +57,9 @@
 </template>
 
 <script setup>
+import { useRuntimeConfig } from "#app";
 import { ref } from "vue";
+const config = useRuntimeConfig();
 const hoveredPlayer = ref(false);
 const players = ref([
   {
