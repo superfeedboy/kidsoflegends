@@ -20,8 +20,8 @@
         :style="{
           backgroundImage:
             hoveredPlayer === player.id
-              ? `url('/players/arcane-${player.id}.jpg')`
-              : `url('/players/${player.id}.png')`,
+              ? `url('${baseURL}/players/arcane-${player.id}.jpg')`
+              : `url('${baseURL}/players/${player.id}.png')`,
           backgroundSize: 'cover',
         }"
         @mouseover="hoverPlayer(player.id)"
@@ -96,6 +96,7 @@ const players = ref([
       "Multiple Champion d'Europe de League of Legends, Légendaire support de la team Fnatic, Bora est plus connu sous le nom de YellowStar!",
   },
 ]);
+const baseURL = config.app.baseURL || "";
 
 const hoverPlayer = (playerId) => {
   hoveredPlayer.value = playerId;
