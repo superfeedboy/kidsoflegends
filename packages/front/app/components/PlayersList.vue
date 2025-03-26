@@ -8,7 +8,7 @@
       <USection
         v-for="player in players"
         :key="player"
-        class="w-full h-60 lg:h-[50vh] lg:size-[15vw] hover:grow-7 transition-grow duration-300 bg-[center_top_30%] lg:bg-center hover:bg-[center_top_30%] shadow-[15px_0_15px_-15px,-15px_0_15px_-15px] lg:shadow-[0_15px_15px_-15px,0_-15px_15px_-15px] shadow-black hover:shadow-yellow-200"
+        class="w-full h-60 lg:h-[50vh] lg:size-[15vw] hover:grow-7 transition-grow duration-300 bg-[center_top_30%] lg:bg-center hover:bg-[center_top_30%] shadow-[15px_0_15px_-15px,-15px_0_15px_-15px] lg:shadow-[0_15px_15px_-15px,0_-15px_15px_-15px] shadow-black hover:shadow-yellow-200 cursor-pointer"
         :class="[
           player.id === 1
             ? 'rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl'

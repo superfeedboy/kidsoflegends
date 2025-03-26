@@ -2,7 +2,7 @@
   <div id="stream-panel" class="bg-darkblue-500">
     <div class="flex justify-center">
       <iframe
-        src="https://player.twitch.tv/?channel=yellowstar&parent={{currentHostname}}&autoplay=false"
+        :src="`https://player.twitch.tv/?channel=yellowstar&parent=${currentHostname}&autoplay=false`"
         height="100%"
         width="100%"
         frameborder="0"
@@ -16,5 +16,9 @@
 </template>
 
 <script setup>
-const currentHostname = ref(window.location.hostname);
+const currentHostname = ref("");
+
+onMounted(() => {
+  currentHostname.value = window.location.hostname;
+});
 </script>
