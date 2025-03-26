@@ -111,7 +111,7 @@ onMounted(() => {
     hoverPlayer(
       parseInt(
         document
-          .elementFromPoint(window.innerWidth / 2, window.innerHeight / 5)
+          .elementFromPoint(window.innerWidth / 2, window.innerHeight / 3)
           .closest(".kol_player")?.id || null
       )
     );
