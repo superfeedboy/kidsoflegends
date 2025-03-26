@@ -3,55 +3,55 @@
   "compilerOptions": {
     "paths": {
       "nitropack/types": [
-        "../node_modules/nitropack/types"
+        "../../../node_modules/nitropack/types"
       ],
       "nitropack/runtime": [
-        "../node_modules/nitropack/runtime"
+        "../../../node_modules/nitropack/runtime"
       ],
       "nitropack": [
-        "../node_modules/nitropack"
+        "../../../node_modules/nitropack"
       ],
       "defu": [
-        "../node_modules/defu"
+        "../../../node_modules/defu"
       ],
       "h3": [
-        "../node_modules/h3"
+        "../../../node_modules/h3"
       ],
       "consola": [
-        "../node_modules/consola"
+        "../../../node_modules/consola"
       ],
       "ofetch": [
-        "../node_modules/ofetch"
+        "../../../node_modules/ofetch"
       ],
       "@nuxt/devtools": [
-        "../node_modules/@nuxt/devtools"
+        "../../../node_modules/@nuxt/devtools"
       ],
       "vue": [
-        "../node_modules/vue"
+        "../../../node_modules/vue"
       ],
       "@vue/runtime-core": [
-        "../node_modules/@vue/runtime-core"
+        "../../../node_modules/@vue/runtime-core"
       ],
       "@vue/compiler-sfc": [
-        "../node_modules/@vue/compiler-sfc"
+        "../../../node_modules/@vue/compiler-sfc"
       ],
       "vue-router": [
-        "../node_modules/vue-router"
+        "../../../node_modules/vue-router"
       ],
       "vue-router/auto-routes": [
-        "../node_modules/vue-router/vue-router-auto-routes"
+        "../../../node_modules/vue-router/vue-router-auto-routes"
       ],
       "unplugin-vue-router/client": [
-        "../node_modules/unplugin-vue-router/client"
+        "../../../node_modules/unplugin-vue-router/client"
       ],
       "@nuxt/schema": [
-        "../node_modules/@nuxt/schema"
+        "../../../node_modules/@nuxt/schema"
       ],
       "nuxt": [
-        "../node_modules/nuxt"
+        "../../../node_modules/nuxt"
       ],
       "vite/client": [
-        "../node_modules/vite/client"
+        "../../../node_modules/vite/client"
       ],
       "~": [
         "../app"
@@ -93,43 +93,43 @@
         "../public/*"
       ],
       "#app": [
-        "../node_modules/nuxt/dist/app"
+        "../../../node_modules/nuxt/dist/app"
       ],
       "#app/*": [
-        "../node_modules/nuxt/dist/app/*"
+        "../../../node_modules/nuxt/dist/app/*"
       ],
       "vue-demi": [
-        "../node_modules/nuxt/dist/app/compat/vue-demi"
+        "../../../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#ui": [
-        "../node_modules/@nuxt/ui/dist/runtime"
+        "../../../node_modules/@nuxt/ui/dist/runtime"
       ],
       "#ui/*": [
-        "../node_modules/@nuxt/ui/dist/runtime/*"
+        "../../../node_modules/@nuxt/ui/dist/runtime/*"
       ],
       "#color-mode-options": [
         "./color-mode-options.mjs"
       ],
       "#nuxt-scripts-validator": [
-        "../node_modules/@nuxt/scripts/dist/runtime/validation/valibot"
+        "../../../node_modules/@nuxt/scripts/dist/runtime/validation/valibot"
       ],
       "#nuxt-scripts": [
-        "../node_modules/@nuxt/scripts/dist/runtime"
+        "../../../node_modules/@nuxt/scripts/dist/runtime"
       ],
       "#nuxt-scripts/*": [
-        "../node_modules/@nuxt/scripts/dist/runtime/*"
+        "../../../node_modules/@nuxt/scripts/dist/runtime/*"
       ],
       "#vue-router": [
-        "../node_modules/vue-router"
+        "../../../node_modules/vue-router"
       ],
       "#unhead/composables": [
-        "../node_modules/nuxt/dist/head/runtime/composables/v4"
+        "../../../node_modules/nuxt/dist/head/runtime/composables/v4"
       ],
       "#imports": [
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/dev"
+        "./manifest/meta/783ebdd9-7b78-4489-83d9-949b3290bc56"
       ],
       "#components": [
         "./components"
@@ -174,58 +174,63 @@
     "../.config/nuxt.*",
     "../**/*",
     "../app/**/*",
-    "../node_modules/@nuxtjs/color-mode/runtime",
-    "../node_modules/@nuxtjs/color-mode/dist/runtime",
-    "../node_modules/@nuxt/ui/runtime",
-    "../node_modules/@nuxt/ui/dist/runtime",
-    "../node_modules/@nuxt/eslint/runtime",
-    "../node_modules/@nuxt/eslint/dist/runtime",
-    "../node_modules/@nuxt/fonts/runtime",
-    "../node_modules/@nuxt/fonts/dist/runtime",
-    "../node_modules/@nuxt/icon/runtime",
-    "../node_modules/@nuxt/icon/dist/runtime",
-    "../node_modules/@nuxt/scripts/runtime",
-    "../node_modules/@nuxt/scripts/dist/runtime",
-    "../node_modules/@nuxt/test-utils/runtime",
-    "../node_modules/@nuxt/test-utils/dist/runtime",
-    "../node_modules/@nuxt/devtools/runtime",
-    "../node_modules/@nuxt/devtools/dist/runtime",
-    "../node_modules/@nuxt/telemetry/runtime",
-    "../node_modules/@nuxt/telemetry/dist/runtime",
-    ".."
+    "../../../node_modules/@nuxtjs/color-mode/runtime",
+    "../../../node_modules/@nuxtjs/color-mode/dist/runtime",
+    "../../../node_modules/@nuxt/ui/runtime",
+    "../../../node_modules/@nuxt/ui/dist/runtime",
+    "../../../node_modules/@nuxt/eslint/runtime",
+    "../../../node_modules/@nuxt/eslint/dist/runtime",
+    "../../../node_modules/@nuxt/fonts/runtime",
+    "../../../node_modules/@nuxt/fonts/dist/runtime",
+    "../../../node_modules/@nuxt/icon/runtime",
+    "../../../node_modules/@nuxt/icon/dist/runtime",
+    "../../../node_modules/@nuxt/scripts/runtime",
+    "../../../node_modules/@nuxt/scripts/dist/runtime",
+    "../../../node_modules/@nuxt/test-utils/runtime",
+    "../../../node_modules/@nuxt/test-utils/dist/runtime",
+    "../../../node_modules/@nuxt/devtools/runtime",
+    "../../../node_modules/@nuxt/devtools/dist/runtime",
+    "../../../node_modules/@nuxt/telemetry/runtime",
+    "../../../node_modules/@nuxt/telemetry/dist/runtime",
+    "..",
+    "../../../node_modules/nuxt/dist/app",
+    "../../../node_modules/nuxt/dist/app/compat/vue-demi",
+    "../../../node_modules/@nuxt/scripts/dist/runtime/validation/valibot",
+    "../../../node_modules/vue-router/dist/vue-router.node",
+    "../../../node_modules/nuxt/dist/head/runtime/composables/v4"
   ],
   "exclude": [
     "../dist",
     "../node_modules",
     "../../../node_modules",
-    "../node_modules/nuxt/node_modules",
-    "../node_modules/@nuxtjs/color-mode/node_modules",
-    "../node_modules/@nuxt/ui/node_modules",
-    "../node_modules/@nuxt/eslint/node_modules",
-    "../node_modules/@nuxt/fonts/node_modules",
-    "../node_modules/@nuxt/icon/node_modules",
-    "../node_modules/@nuxt/scripts/node_modules",
-    "../node_modules/@nuxt/test-utils/node_modules",
-    "../node_modules/@nuxt/devtools/node_modules",
-    "../node_modules/@nuxt/telemetry/node_modules",
-    "../node_modules/@nuxtjs/color-mode/runtime/server",
-    "../node_modules/@nuxtjs/color-mode/dist/runtime/server",
-    "../node_modules/@nuxt/ui/runtime/server",
-    "../node_modules/@nuxt/ui/dist/runtime/server",
-    "../node_modules/@nuxt/eslint/runtime/server",
-    "../node_modules/@nuxt/eslint/dist/runtime/server",
-    "../node_modules/@nuxt/fonts/runtime/server",
-    "../node_modules/@nuxt/fonts/dist/runtime/server",
-    "../node_modules/@nuxt/icon/runtime/server",
-    "../node_modules/@nuxt/icon/dist/runtime/server",
-    "../node_modules/@nuxt/scripts/runtime/server",
-    "../node_modules/@nuxt/scripts/dist/runtime/server",
-    "../node_modules/@nuxt/test-utils/runtime/server",
-    "../node_modules/@nuxt/test-utils/dist/runtime/server",
-    "../node_modules/@nuxt/devtools/runtime/server",
-    "../node_modules/@nuxt/devtools/dist/runtime/server",
-    "../node_modules/@nuxt/telemetry/runtime/server",
-    "../node_modules/@nuxt/telemetry/dist/runtime/server",
+    "../../../node_modules/nuxt/node_modules",
+    "../../../node_modules/@nuxtjs/color-mode/node_modules",
+    "../../../node_modules/@nuxt/ui/node_modules",
+    "../../../node_modules/@nuxt/eslint/node_modules",
+    "../../../node_modules/@nuxt/fonts/node_modules",
+    "../../../node_modules/@nuxt/icon/node_modules",
+    "../../../node_modules/@nuxt/scripts/node_modules",
+    "../../../node_modules/@nuxt/test-utils/node_modules",
+    "../../../node_modules/@nuxt/devtools/node_modules",
+    "../../../node_modules/@nuxt/telemetry/node_modules",
+    "../../../node_modules/@nuxtjs/color-mode/runtime/server",
+    "../../../node_modules/@nuxtjs/color-mode/dist/runtime/server",
+    "../../../node_modules/@nuxt/ui/runtime/server",
+    "../../../node_modules/@nuxt/ui/dist/runtime/server",
+    "../../../node_modules/@nuxt/eslint/runtime/server",
+    "../../../node_modules/@nuxt/eslint/dist/runtime/server",
+    "../../../node_modules/@nuxt/fonts/runtime/server",
+    "../../../node_modules/@nuxt/fonts/dist/runtime/server",
+    "../../../node_modules/@nuxt/icon/runtime/server",
+    "../../../node_modules/@nuxt/icon/dist/runtime/server",
+    "../../../node_modules/@nuxt/scripts/runtime/server",
+    "../../../node_modules/@nuxt/scripts/dist/runtime/server",
+    "../../../node_modules/@nuxt/test-utils/runtime/server",
+    "../../../node_modules/@nuxt/test-utils/dist/runtime/server",
+    "../../../node_modules/@nuxt/devtools/runtime/server",
+    "../../../node_modules/@nuxt/devtools/dist/runtime/server",
+    "../../../node_modules/@nuxt/telemetry/runtime/server",
+    "../../../node_modules/@nuxt/telemetry/dist/runtime/server",
     "../.output"
   ]
 }

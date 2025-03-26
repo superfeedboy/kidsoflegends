@@ -2,6 +2,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  ssr: false,
+
+  nitro: {
+    prerender: {
+      routes: ["/"],
+    },
+  },
+
   modules: [
     "@nuxt/ui",
     "@nuxt/eslint",

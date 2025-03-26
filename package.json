@@ -8,6 +8,7 @@
   "scripts": {
     "dev:front": "yarn workspace front dev --host",
     "dev:api": "yarn workspace api dev",
+    "generate:front": "yarn workspace front generate",
     "build:front": "yarn workspace front build",
     "build:api": "yarn workspace api build",
     "start:front": "yarn workspace front start",

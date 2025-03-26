@@ -199,7 +199,7 @@ declare module 'nuxt/schema' {
   }
   interface PublicRuntimeConfig {
    "nuxt-scripts": {
-      version: string,
+      version: any,
 
       defaultScriptOptions: {
          trigger: string,
