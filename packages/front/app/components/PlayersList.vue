@@ -111,6 +111,7 @@ onMounted(() => {
       parseInt(
         document
           .elementFromPoint(window.innerWidth / 2, window.innerHeight / 4)
+
           .closest(".kol_player")?.id || null
       )
     );
