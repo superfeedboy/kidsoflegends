@@ -4,7 +4,6 @@
     <div
       class="flex flex-col lg:flex-row flex-nowrap justify-center px-10 lg:px-0 mb-6"
     >
-      <!-- :style="`background-image: url('/players/${player.id}.png'); hover::background-image: url('/players/arcane-${player.id}.png'); background-size: cover;`" -->
       <div
         v-for="player in players"
         :id="player.id"
@@ -111,7 +110,8 @@ onMounted(() => {
     hoverPlayer(
       parseInt(
         document
-          .elementFromPoint(window.innerWidth / 2, window.innerHeight / 3)
+          .elementFromPoint(window.innerWidth / 2, window.innerHeight / 4)
+
           .closest(".kol_player")?.id || null
       )
     );
