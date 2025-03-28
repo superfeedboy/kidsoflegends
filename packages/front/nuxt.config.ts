@@ -36,7 +36,13 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "fr",
       },
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      link: [
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/kidsoflegends/favicon.ico",
+        },
+      ],
     },
     baseURL: "/kidsoflegends/", // Chemin de base pour GitHub Pages
   },
