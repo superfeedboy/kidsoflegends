@@ -24,7 +24,7 @@ jobs:
       - name: Update version in base package.json
         uses: jossef/action-set-json-field@v1
         with:
-          file: /package.json
+          file: package.json
           field: version
           value: ${{ steps.version.outputs.new_tag }}
       - name: Update version in front package.json
