@@ -16,7 +16,7 @@ jobs:
         id: version
         uses: anothrNick/github-tag-action@1.36.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
           DEFAULT_BUMP: patch
           RELEASE_BRANCHES: "develop"
           DRY_RUN: true
@@ -42,13 +42,13 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PAT_TOKEN }}
           branch: ${{ github.ref }}
           tags: true
       - name: Merge develop into master
         uses: devmasx/merge-branch@v1.3.1
         with:
-          github_token: ${{ github.token }}
+          github_token: ${{ secrets.PAT_TOKEN }}
           type: now
           from_branch: develop
           target_branch: master
