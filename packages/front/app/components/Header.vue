@@ -21,13 +21,4 @@
   background-position: top right;
   background-repeat: no-repeat;
 }
-/* img {
-  min-width: 20%;
-  max-width: 30%;
-  width: 60%;
-}
-
-p {
-  font-size: 1.5em;
-} */
 </style>
