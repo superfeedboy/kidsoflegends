@@ -1,0 +1,55 @@
+name: Calculate release version
+
+on:
+  workflow_dispatch:
+
+jobs:
+  upgrade-version:
+    runs-on: ubuntu-20.04
+    outputs:
+      new_tag: ${{ steps.version.outputs.new_tag }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: "0"
+      - name: Compute the new version number
+        id: version
+        uses: anothrNick/github-tag-action@1.36.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BUMP: patch
+          RELEASE_BRANCHES: "develop"
+          DRY_RUN: true
+          WITH_V: false
+      - name: Update version in base package.json
+        uses: jossef/action-set-json-field@v1
+        with:
+          file: /package.json
+          field: version
+          value: ${{ steps.version.outputs.new_tag }}
+      - name: Update version in front package.json
+        uses: jossef/action-set-json-field@v1
+        with:
+          file: packages/front/package.json
+          field: version
+          value: ${{ steps.version.outputs.new_tag }}
+      - name: Commit change in package.json
+        run: |
+          git config --local user.email "gillescognin@gmail.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "📦 Release v${{ steps.version.outputs.new_tag }}" -a
+          git tag v${{ steps.version.outputs.new_tag }}
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+          tags: true
+      - name: Merge develop into master
+        uses: devmasx/merge-branch@v1.3.1
+        with:
+          github_token: ${{ github.token }}
+          type: now
+          from_branch: develop
+          target_branch: master
+          commit_message: "Merge develop into master for release v${{ steps.version.outputs.new_tag }}"
