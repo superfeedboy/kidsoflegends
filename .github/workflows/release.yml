@@ -52,4 +52,3 @@ jobs:
           type: now
           from_branch: develop
           target_branch: master
-          commit_message: "Merge develop into master for release v${{ steps.version.outputs.new_tag }}"
