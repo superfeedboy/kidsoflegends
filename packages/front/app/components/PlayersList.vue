@@ -89,7 +89,7 @@ const players = ref([
     name: "Elsa DAVOINE",
     role: "Joueuse",
     description:
-      "La voix Française de Caitlyn dans la série Arcane, Elsa est actrice, comédienne de doublage et novice dans le JdR :)",
+      "La voix Française de Caitlyn dans la série Arcane, Elsa est actrice, comédienne de doublage et novice dans le JdR :) Elle est aussi la voix de Merrin dans Star Wars, Fragile dans Death Stranding, Sydney Sweeney dans Euphoria et The White Lotus!",
   },
   {
     id: 5,
