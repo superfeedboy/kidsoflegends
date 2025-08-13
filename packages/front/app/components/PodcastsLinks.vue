@@ -20,7 +20,7 @@
         />
         <div class="flex flex-row gap-4">
           <ULink
-            to="https://instagram.com/superfeedboy"
+            to="https://instagram.com/dnd4noobs.off/"
             target="_blank"
             class="text-white/90 drop-shadow-[0_5px_5px_rgba(255,255,255,.7)]"
           >
@@ -32,6 +32,20 @@
             class="text-white/90 drop-shadow-[0_5px_5px_rgba(255,255,255,.7)]"
           >
             <UIcon name="i-lucide-podcast" class="size-10" />
+          </ULink>
+          <ULink
+            to="https://twitch.com/dnd4noobs"
+            target="_blank"
+            class="text-white/90 drop-shadow-[0_5px_5px_rgba(255,255,255,.7)]"
+          >
+            <UIcon name="i-lucide-twitch" class="size-10" />
+          </ULink>
+          <ULink
+            to="https://www.patreon.com/DnD4Noobs"
+            target="_blank"
+            class="text-white/90 drop-shadow-[0_5px_5px_rgba(255,255,255,.7)]"
+          >
+            <UIcon name="tabler:brand-patreon" class="size-10" />
           </ULink>
         </div>
       </div>
@@ -69,11 +83,11 @@
             <UIcon name="i-lucide-twitch" class="size-10" />
           </ULink>
           <ULink
-            to="l.instagram.com/?u=https%3A%2F%2Flinktr.ee%2FAMOURGLOIREDRAGONS%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaYmnZeW437blMv7RoZ_YKnve0BiMiR5-NUyXiylql-sH7BdSB9IPQQ1pfo_aem__BEN0umSA7ES-bbu7o1G4g&e=AT1lqXZDAK0ZJyAClGGNXLfIJ27wmB3vRPMkaa9Rm7pc_llzqGOdNp2qw-_0KaLMTaKm99nobfwQTMCo1QscDUGVtYA_8UTW2L2ICg"
+            to="https://www.patreon.com/Amourgloireetdragons"
             target="_blank"
             class="text-white/90 drop-shadow-[0_5px_5px_rgba(255,255,255,.7)]"
           >
-            <UIcon name="i-lucide-link" class="size-10" />
+            <UIcon name="tabler:brand-patreon" class="size-10" />
           </ULink>
         </div>
       </div>
